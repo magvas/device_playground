@@ -19,10 +19,12 @@
     <title>Camera</title>
 </head>
 <body onload="init()">
-    <video id="videoOutput" autoplay="autoplay"></video>
+    <video id="videoOutput" autoplay="autoplay" style="width: 307px;height: 250px;"></video>
     <div class="container">            
         <button id="btnStart" type="button" class="btn btn-primary" onclick="startCamera()">Start</button>
         <button id="btnStop" type="button" class="btn btn-secondary" onclick="stopCamera()">Stop</button>            
     </div>        
+    <img id="imgOutput" src="" width="640px">
+    <canvas id="canvasOutput" style="display:none;"></canvas>
 </body>
 </html>
